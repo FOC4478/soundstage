@@ -1,0 +1,49 @@
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--red:#f22d32;--black:#111;--white:#f7f4ef}
+body{background:var(--white);color:var(--black);font-family:'DM Sans',sans-serif}
+a{text-decoration:none;color:inherit}
+header{height:78px;background:#111;color:white;padding:0 7%;display:flex;align-items:center;justify-content:space-between}
+.logo{font:700 24px Oswald;letter-spacing:1px}.logo span{color:var(--red)}
+nav{display:flex;gap:30px;align-items:center;font-size:12px;font-weight:700}
+nav a:hover{color:var(--red)}.navbtn{background:var(--red);padding:13px 18px;color:white}
+.menu{display:none;background:none;border:0;color:white;font-size:24px}
+.hero{min-height:610px;padding:90px 8%;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.eyebrow,.tag{font-size:11px;letter-spacing:2px;font-weight:700;color:var(--red)}
+h1,h2,h3{font-family:Oswald,sans-serif}
+h1{font-size:clamp(58px,8vw,105px);line-height:.92;letter-spacing:-2px;margin:25px 0}
+h1 span{color:var(--red)}
+.hero p{line-height:1.8;color:#666;max-width:480px;margin-bottom:30px}
+.button{display:inline-block;background:var(--red);color:white;padding:17px 23px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px}
+.hero-small{font-size:9px;letter-spacing:2px;margin-top:35px;font-weight:700}
+.poster{height:420px;background:var(--red);color:white;padding:25px;display:flex;flex-direction:column;justify-content:space-between;transform:rotate(2deg);box-shadow:15px 15px 0 #111}
+.poster-top{font-size:10px;letter-spacing:2px}
+.equalizer{height:190px;display:flex;align-items:center;justify-content:center;gap:8px}
+.equalizer i{width:12px;background:white;border-radius:10px;height:30%}
+.equalizer i:nth-child(3n){height:90%}.equalizer i:nth-child(3n + 1){height:55%}.equalizer i:nth-child(4n){height:70%}
+.poster-bottom{display:flex;justify-content:space-between;align-items:end}
+.poster-bottom strong{font:700 42px/1 Oswald}.poster-bottom span{font-size:11px}
+.band{background:#111;color:white;display:flex;justify-content:space-around;padding:23px;font:600 13px Oswald;letter-spacing:2px}
+.section{padding:95px 8%}.section h2{font-size:clamp(34px,5vw,58px);max-width:850px;line-height:1.05;margin:25px 0 40px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.cards article{background:white;padding:30px;border:1px solid #e7e1db}
+.cards b,.journey-line b{color:var(--red);font-size:12px}
+h3{font-size:23px;margin:15px 0}
+.section p{color:#777;font-size:14px;line-height:1.7}
+.dark{background:#111;color:white}.dark .tag{color:var(--red)}
+.platform-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:25px}
+.platform-grid>div{border-top:2px solid var(--red);padding:25px 10px}
+.platform-grid span{color:var(--red);font:700 30px Oswald}
+.platform-grid p,.dark p{color:#aaa}
+.journey-line{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.journey-line>div{border-left:2px solid var(--red);padding:15px 20px}
+.market{background:#e9e4dd}.market-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.market-grid>div{background:#111;color:white;padding:30px;min-height:200px}
+.market-grid small{color:var(--red);letter-spacing:2px;font-weight:700}
+.market-grid h3{font-size:26px}.market-grid p{color:#bbb}
+.closing{background:var(--red);color:white;text-align:center;padding:100px 8%}
+.closing .tag{color:white}.closing h2{font-size:clamp(38px,6vw,70px);max-width:800px;margin:25px auto 35px}
+.closing .button{background:#111}
+footer{padding:30px 8%;display:flex;justify-content:space-between;align-items:center;background:#111;color:#aaa;font-size:11px}
+footer .logo{color:white}
+@media(max-width:800px){.menu{display:block}nav{display:none;position:absolute;top:78px;left:0;width:100%;background:#111;padding:25px;z-index:5;flex-direction:column}nav.open{display:flex}.hero{grid-template-columns:1fr;padding:65px 7%}.poster{max-width:500px;width:100%;margin:auto}.cards,.platform-grid,.market-grid{grid-template-columns:1fr 1fr}.journey-line{grid-template-columns:1fr 1fr}}
+@media(max-width:500px){.cards,.platform-grid,.market-grid,.journey-line{grid-template-columns:1fr}.band{flex-wrap:wrap;gap:18px}.section{padding:70px 7%}.poster-bottom strong{font-size:32px}footer{flex-wrap:wrap;gap:15px}}
